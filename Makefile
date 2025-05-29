@@ -22,10 +22,10 @@ CFLAGS = -Wall -Wextra -Werror
 
 all: ${NAME}
 ${NAME}: ${OBJS}
-	${LIBC} ${NAME} ${OBJS}
+	${LIBC} ${NAME} $?
 
 bonus: ${NAME} ${OBJSB}
-	${LIBC} ${NAME} ${OBJSB}
+	${LIBC} ${NAME} $?
 
 clean:
 	${RM} ${OBJS} ${OBJSB}
