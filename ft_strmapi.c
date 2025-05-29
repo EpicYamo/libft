@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <sys/_types/_null.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
